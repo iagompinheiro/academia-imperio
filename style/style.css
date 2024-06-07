@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+:root { 
+ --primary-color: rgb(255, 217, 47);
+ --secondary-color: rgb(252, 206, 0);
+ --tertiary-color: rgb(255, 223, 80);
+
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 246, 246);
+}
+
+#primeiro-bloco {
+  background-image: url("../assets/images/bg-image-edit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 700px;
+  color: var(--primary-color);
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.322);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#primeiro-bloco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  z-index: 1;
+}
+
+#primeiro-bloco header,
+#primeiro-bloco h1,
+#primeiro-bloco span {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+#primeiro-bloco header {
+  width: 100%;
+  padding: 28px 8%;
+}
+
+#primeiro-bloco > nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  justify-content: right;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 90px;
+  color: var(--primary-color);
+  min-width: 300px;
+  max-width: 1000px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 60px 30px ;
+  text-align: left;
+  line-height: 80px;
+  opacity: 0.8;
+}
+
+#primeiro-bloco span {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+    text-align: right;
+    padding: 30px;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+}
+
+#segundo-bloco {
+    background-color: black;
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 500px;
+}
+
+
+
+
+.multi-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multi-image-container img {
+  max-height: 350px; /* Ajuste a altura máxima conforme necessário */
+  width: auto;
+  margin: 0 5px; /* Espaço entre as imagens */
+}
+
+
+#segundo-bloco h2 { 
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 30px 30px 15px 30px;
+    text-transform: uppercase;
+}
+
+
+#terceiro-bloco{
+  background-color: var(--tertiary-color);
+  margin: auto;
+  padding-bottom: 40px;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 500px;
+  
+}
+
+#terceiro-bloco h2 {
+  color: black;
+  font-size: 30px;
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: 720;
+
+}
+
+.grade-horarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Seis colunas iguais */
+  gap: 10px; /* Espaçamento entre os itens */
+  
+  
+}
+
+.grade-horarios .dias {
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 80px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  font-weight: 500;
+  justify-self: center;
+
+}
+.grade-horarios .atividade {
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 25px;
+  width: 300px;
+  font-size: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  font-weight: 700;
+}
+.grade-horarios .hora {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+#quarto-bloco {
+  background-color: var(--tertiary-color);
+  margin: auto;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 300px;
+  justify-content: center;
+  
+}
+
+#quarto-bloco .titulo-b4 {
+  color: black;
+  font-size: 30px;
+  margin: auto;
+  padding: 30px;
+  height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  
+}
+
+.planos-colunas {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Três colunas centradas */
+  gap: 20px; /* Espaçamento entre as colunas */
+  justify-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.mensal,
+.anual,
+.semestral {
+  background-color: #fdf9bf;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tipo-plano {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.valor {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 800;
+}
+.descricao {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#quinto-bloco {
+  background-color: #000000;
+  height: 400px;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#quinto-bloco h3 {
+  color: var(--secondary-color);
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#quinto-bloco form {
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+.form-label {
+  color: var(--secondary-color);
+}
+
+#quinto-bloco button.btn-primary {
+  background-color: #049752; /* Define a cor de fundo do botão */
+  border-color: #007e4371; /* Define a cor da borda do botão */
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+}
+
+#quinto-bloco button.btn-primary:hover {
+  background-color: #03ff75be; /* Define a cor de fundo do botão ao passar o mouse sobre ele */
+  border-color: #03ff75be; /* Define a cor da borda do botão ao passar o mouse sobre ele */
+}
+
+
+footer {
+  background-color: white;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  height: 175px;
+  padding: 20px;
+  text-align: right;
+}
+
+footer address {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  
+    #primeiro-bloco h1 {
+     font-size: 50px;
+     line-height: 1.2;
+     display: block;
+     text-align: center;
+     
+    }
+
+    #primeiro-bloco header {
+      width: 100%;
+      padding: 28px 8%;
+      display: flex;
+      justify-content: center; 
+    }
+
+    #nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #primeiro-bloco span {
+      font-size: 15px;
+      padding: 15px;
+
+}
+
+    #segundo-bloco {
+      height: 300px ;
+    }
+
+    #segundo-bloco h2 {
+      font-size: 18px;
+      text-align: center;
+      
+    }
+
+    .multi-image-container img {
+      max-height: 180px; /* Ajuste a altura máxima conforme necessário */
+      width: auto;
+      margin: 0 5px; /* Espaço entre as imagens */
+    }
+
+    #terceiro-bloco {
+      height: 430px;
+    }
+
+
+
+    #terceiro-bloco h2 {
+      text-align: center;
+      font-size: 22px;
+      
+    }
+
+    #terceiro-bloco .dias {
+      padding: 10px;
+      background-color: #000000;
+      border-radius: 20px;
+      margin-left: 15px;
+      width: 60px;
+      font-size: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgb(241, 205, 40);
+      font-weight: 500;
+      justify-self: center;
+    }
+
+    #terceiro-bloco .atividade {
+      padding: 10px;
+      background-color: #000000;
+      border-radius: 25px;
+      width: 240px;
+      font-size: 15px;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(241, 205, 40);
+      font-weight: 700;
+    }
+
+    #terceiro-bloco .hora {
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 30px;
+      font-size: 15px;
+      width: 50px;
+      text-align: center;
+      color: black;
+      font-weight: 600;
+    }
+
+    #quarto-bloco {
+      height: 700px;
+  
+
+    }
+    #quarto-bloco .planos-colunas {
+      display: block;
+      
+      
+      
+    }
+
+    .mensal, .anual, .semestral {
+  background-color: #fdf9bf;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+
+#quinto-bloco h3 {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  padding: 30px 30px 20px 30px;
+
+}
+
+#quinto-bloco form {
+  max-width: 300px;
+  margin-left: 30px;
+
+}
+
+footer {
+  height: 125px;
+  padding: 10px;
+  
+}
+
+footer address {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+
+footer a {
+  font-size: 14px;
+  
+}
+    
+
+}
+
