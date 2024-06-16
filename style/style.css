@@ -24,7 +24,7 @@ body {
   background-size: cover;
   background-position: center;
   min-width: 300px;
-  max-width: 1000px;
+  width: 100%;
   height: 700px;
   color: var(--primary-color);
   padding: 20px;
@@ -121,12 +121,9 @@ h1 {
     background-color: black;
     margin: 0 auto;
     min-width: 300px;
-    max-width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 600px;
 }
-
-
-
 
 .multi-image-container {
   display: flex;
@@ -135,7 +132,7 @@ h1 {
 }
 
 .multi-image-container img {
-  max-height: 350px; /* Ajuste a altura máxima conforme necessário */
+  max-height: 450px; /* Ajuste a altura máxima conforme necessário */
   width: auto;
   margin: 0 5px; /* Espaço entre as imagens */
 }
@@ -148,17 +145,6 @@ h1 {
     text-transform: uppercase;
 }
 
-
-#terceiro-bloco{
-  background-color: var(--tertiary-color);
-  margin: auto;
-  padding-bottom: 40px;
-  min-width: 300px;
-  max-width: 1000px;
-  height: 500px;
-  
-}
-
 #terceiro-bloco h2 {
   color: black;
   font-size: 30px;
@@ -168,58 +154,71 @@ h1 {
 
 }
 
+#terceiro-bloco {
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column; /* Para alinhar o título e a grade verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 550px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
 .grade-horarios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Seis colunas iguais */
-  gap: 10px; /* Espaçamento entre os itens */
-  
-  
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
 }
 
 .grade-horarios .dias {
-  padding: 10px;
-  background-color: #000000;
   border-radius: 20px;
+  margin-left: 150px;
   width: 80px;
   font-size: 24px;
+  color: var(--tertiary-color);
+  background-color: #000000;
   text-align: center;
   text-transform: uppercase;
-  color: var(--tertiary-color);
-  font-weight: 500;
-  justify-self: center;
-
-}
-.grade-horarios .atividade {
   padding: 10px;
-  background-color: #000000;
+}
+
+.grade-horarios .atividade {
   border-radius: 25px;
-  width: 300px;
+  width: 400px;
   font-size: 24px;
   text-align: left;
-  text-transform: uppercase;
-  color: var(--tertiary-color);
   font-weight: 700;
-}
-.grade-horarios .hora {
+  color: var(--tertiary-color);
+  background-color: #000000;
+  text-transform: uppercase;
   padding: 10px;
+
+}
+
+.grade-horarios .hora {
   background-color: #fff;
   border-radius: 30px;
   font-size: 18px;
   width: 50px;
-  text-align: center;
   color: black;
   font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+
 }
 
 #quarto-bloco {
   background-color: var(--tertiary-color);
   margin: auto;
   min-width: 300px;
-  max-width: 1000px;
+  width: 100%;
   height: 300px;
   justify-content: center;
   
 }
+
+
 
 #quarto-bloco .titulo-b4 {
   color: black;
@@ -244,7 +243,7 @@ h1 {
 .mensal,
 .anual,
 .semestral {
-  background-color: #fdf9bf;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -270,7 +269,7 @@ h1 {
   background-color: #000000;
   height: 400px;
   min-width: 300px;
-  max-width: 1000px;
+  width: 100%;
   margin: auto;
 }
 
@@ -283,7 +282,7 @@ h1 {
 }
 
 #quinto-bloco form {
-  max-width: 500px;
+  max-width: 600px;
   margin-left: 30px;
 }
 
@@ -308,7 +307,7 @@ h1 {
 footer {
   background-color: white;
   min-width: 300px;
-  max-width: 1000px;
+  width: 100%;
   margin: auto;
   height: 175px;
   padding: 20px;
@@ -396,7 +395,7 @@ a:hover {
       padding: 10px;
       background-color: #000000;
       border-radius: 20px;
-      margin-left: 15px;
+      margin-left: 70px;
       width: 60px;
       font-size: 15px;
       text-align: center;
@@ -442,7 +441,6 @@ a:hover {
     }
 
     .mensal, .anual, .semestral {
-  background-color: #fdf9bf;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -484,4 +482,3 @@ footer a {
     
 
 }
-
