@@ -14,9 +14,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--primary-color)
-}
+
 
 #primeiro-bloco {
   background-image: url("../assets/images/bg-image-edit.jpg");
@@ -395,7 +393,7 @@ a:hover {
       padding: 10px;
       background-color: #000000;
       border-radius: 20px;
-      margin-left: 30px;
+      margin-left: 15px;
       width: 60px;
       font-size: 15px;
       text-align: center;
@@ -421,6 +419,7 @@ a:hover {
       padding: 10px;
       background-color: #fff;
       border-radius: 30px;
+      margin-right: 10px;
       font-size: 15px;
       width: 50px;
       text-align: center;
