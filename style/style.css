@@ -310,6 +310,7 @@ footer {
   height: 175px;
   padding: 20px;
   text-align: right;
+  position: relative; /* Para permitir posicionamento absoluto dos elementos filhos */
 }
 
 footer address {
@@ -330,6 +331,18 @@ a:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
+
+footer .logo-footer {
+  position: absolute; /* Necessário para posicionar a imagem corretamente */
+  bottom: 20px; /* Ajustar conforme necessário */
+  left: 20px;  /* Ajustar conforme necessário */
+}
+
+footer .logo-footer img {
+  width: 200px;
+  height: auto; /* Para manter a proporção da imagem */
+}
+
 
 @media screen and (max-width: 768px) {
   
@@ -419,9 +432,9 @@ a:hover {
       padding: 10px;
       background-color: #fff;
       border-radius: 30px;
-      margin-right: 10px;
-      font-size: 15px;
-      width: 50px;
+      margin-right: 5px;
+      font-size: 12px;
+      width: 40px;
       text-align: center;
       color: black;
       font-weight: 600;
@@ -477,6 +490,17 @@ footer address {
 footer a {
   font-size: 14px;
   
+}
+
+footer .logo-footer {
+  position: absolute; /* Necessário para posicionar a imagem corretamente */
+  bottom: 35px; /* Ajustar conforme necessário */
+  left: 20px;  /* Ajustar conforme necessário */
+}
+
+footer .logo-footer img {
+  width: 100px;
+  height: auto; /* Para manter a proporção da imagem */
 }
     
 
